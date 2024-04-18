@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'g++ hello.cpp -o output'
+                sh 'g++ hello.cp -o output'
                 echo 'Build Successful'
             }
         }
@@ -15,7 +15,7 @@ pipeline {
                 echo 'Test Successful'
             }
         }
-        stage("Deploy"){
+        stage('Deploy') {
             steps {
                 echo 'Deploying..'
                 echo 'Deployment Successful'
